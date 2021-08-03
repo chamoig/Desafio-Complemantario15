@@ -1,0 +1,36 @@
+
+/*TABLET*/
+@media only screen and (max-width:768px) {
+    .grid {
+        height: 100%;
+        margin: 0%;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "header"
+        "principal"
+        "aside"
+        "footer";
+    }
+    .nav{display: none;}
+}
+
+/*DESKTOP*/
+@media only screen and (min-width:1024px) {
+    .grid {
+        height: 100%;
+        margin: 0%;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: auto auto 3fr 4fr auto;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "aside aside aside"
+        "principal principal principal"
+        "footer footer footer"
+    }
+}
